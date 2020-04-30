@@ -1,10 +1,8 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    name: 'Scott A. Price',
+    jobTitle: 'Front-End Developer',
+    email: 'scott@scottaprice.com'
+  },
   plugins: [],
 }
