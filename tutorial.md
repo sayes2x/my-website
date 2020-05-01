@@ -2,7 +2,7 @@ Tables of contents:
 
 1. Creating a Gatsby Site
   - Timestamp: 0:38
-2. Working with Gatsby Pages *** YOU ARE HERE ***
+2. Working with Gatsby Pages
   - Timestamp: 14:50
 3. Linking Between Pages with Gatsby
   - Timestamp: 27:00
@@ -38,5 +38,5 @@ Tables of contents:
   - Timestamp: 3:49:24
 19. 404 Pages and React Helmet
   - Timestamp: 4:10:18
-20. Deploying Your Gatsby Site
+20. Deploying Your Gatsby Site *** YOU ARE HERE ***
   - Timestamp: 4:25:38

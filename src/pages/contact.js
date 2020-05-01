@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from "../components/head"
 
 const Contact = () => {
   const { site } = useStaticQuery(graphql`
@@ -16,6 +17,7 @@ const Contact = () => {
 
   return (
     <Layout>
+      <Head title='Contact' />
       <h1>Contact</h1>
       <p>
         Email:{" "}
