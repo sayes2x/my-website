@@ -1,3 +1,4 @@
+const newLocal = process.env.CONTENTFUL_SPACE_ID;
 module.exports = {
   siteMetadata: {
     name: 'Scott A. Price',

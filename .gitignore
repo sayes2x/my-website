@@ -67,3 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+
+# .md files
+tutorial.md
+build-error-log.md
