@@ -1,0 +1,1 @@
+"build": "env-cmd -f .env gatsby build",

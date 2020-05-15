@@ -1,4 +1,5 @@
 import React from "react"
+import logo from '../img/logo.png'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import style from  './header.module.css'
@@ -17,14 +18,19 @@ const Header = () => {
   
   return (
     <header className={style.header}>
+      <div className={style.logoContainer}>
+      <img src={logo} alt="logo" className={style.logo}/>
+      <div className={style.titleContainer}>
       <h1 className={style.title}>
         <Link to="/">
           {site.siteMetadata.name}
         </Link>
       </h1>
-      <h2 className={style.title2}>
+      <h2 className={style.subTitle}>
         {site.siteMetadata.jobTitle}
       </h2>
+      </div>
+      </div>
       <nav>
         <ul className={style.navList}>
           <li>

@@ -1,17 +1,35 @@
 .header {
-  padding: 1rem 0 3rem;
+  padding: 0 0 0;
+}
+
+.logo-container {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.logo {
+  max-width: 6.5rem;
+  height: auto;
+  margin: 0;
+}
+
+.title-container {
+  margin-left: 3rem;
 }
 
 .title {
   color: #c2b291;
   font-size: 3rem;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
-.title-2 {
+.subTitle {
   color: #c2b291;
   font-size: 2rem;
   text-decoration: none;
+  margin: 0;
 }
 
 .nav-list {
