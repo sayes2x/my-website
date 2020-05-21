@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import headerStyles from './header.module.css'
+import headerStyles from './resumeHeader.module.css'
 
 const ResumeHeader = () => {
   return (

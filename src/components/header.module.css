@@ -1,56 +1,71 @@
 .header {
   padding: 0 0 0;
+  font-size: 0.4rem;
 }
 
 .logo-container {
   display: flex;
-  margin-bottom: .5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .9em;
 }
 
 .logo {
-  max-width: 6.5rem;
-  height: auto;
+  max-width: 12em;
+  height: 8.4em;
   margin: 0;
 }
 
 .title-container {
-  margin-left: 3rem;
+  margin-left: 5.4rem;
 }
 
 .title {
-  color: #c2b291;
-  font-size: 3rem;
+  font-size: 5.4em;
+  font-weight: 700;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
 .subTitle {
-  color: #c2b291;
-  font-size: 2rem;
-  text-decoration: none;
+  font-size: 3.6em;
+  font-weight: 700;
   margin: 0;
 }
 
 .nav-list {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
+  font-size: .6rem;
+  padding-bottom: 1rem;
 }
 
 .nav-item {
-  color: #a4a4a4;
-  font-size: 0.9rem;
-  padding: 0.2rem 0.6rem;
+  color: #26734d;
+  font-size: 1.6em;
+  padding: .4rem 1.1rem;
   text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #c4c4c4;
-  border-bottom: 4px solid #558b9f;
+  color: #39ac73;
+  border-bottom: .4rem solid #993333;
 }
 
 .active-nav-item {
-  color: #e4e4e4;
-  border-bottom: 4px solid #72abbf;
+  color: #57C78F;
+  border-bottom: .4rem solid #bf4040;
+}
+
+@media (min-width: 400px) {
+  .header { font-size: 0.6rem; }
+  .nav-list {font-size: 0.7rem;}
+}
+
+@media (min-width: 768px) {
+  .header { font-size: 1rem; }
+  .nav-list {font-size: 1rem;}
 }

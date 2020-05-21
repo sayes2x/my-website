@@ -19,17 +19,17 @@ const Header = () => {
   return (
     <header className={style.header}>
       <div className={style.logoContainer}>
-      <img src={logo} alt="logo" className={style.logo}/>
-      <div className={style.titleContainer}>
-      <h1 className={style.title}>
-        <Link to="/">
-          {site.siteMetadata.name}
-        </Link>
-      </h1>
-      <h2 className={style.subTitle}>
-        {site.siteMetadata.jobTitle}
-      </h2>
-      </div>
+        <img src={logo} alt="logo" className={style.logo}/>
+        <div className={style.titleContainer}>
+          <h1 className={style.title}>
+            <Link to="/">
+              {site.siteMetadata.name}
+            </Link>
+          </h1>
+          <h2 className={style.subTitle}>
+            {site.siteMetadata.jobTitle}
+          </h2>
+        </div>
       </div>
       <nav>
         <ul className={style.navList}>
