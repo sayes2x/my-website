@@ -16,9 +16,9 @@ const Footer = () => {
 
   const year = new Date().getFullYear()
   return (
-    <footer>
-      <p className={style.copyright}>
-        Created by {site.siteMetadata.name} - © {year}
+    <footer className={style.footer}>
+      <p>
+        Created by <span className={style.name}>{site.siteMetadata.name}</span> - © {year}
       </p>
     </footer>
   )

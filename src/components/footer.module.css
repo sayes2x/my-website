@@ -1,3 +1,9 @@
-.copyright {
-  color: #c2b291;
+.footer {
+  margin: 2rem;
+  text-align: center;
+}
+
+.name {
+  color: #57C78F;
+  font-weight: 600;
 }
