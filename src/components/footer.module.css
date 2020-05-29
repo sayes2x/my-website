@@ -1,9 +1,14 @@
 .footer {
   margin: 2rem;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .name {
   color: #57C78F;
   font-weight: 600;
+}
+
+@media (min-width: 400px) {
+  .footer {font-size: 1.6rem;}
 }

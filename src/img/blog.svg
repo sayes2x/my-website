@@ -1,0 +1,18 @@
+<svg width="513" height="421" viewBox="0 0 513 421" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5.21387" y="5.87549" width="502" height="410" rx="30" stroke="#57C78F" stroke-width="10"/>
+<line x1="6.21387" y1="66.8755" x2="512.214" y2="66.8755" stroke="#57C78F" stroke-width="10"/>
+<line x1="29.2139" y1="37.8755" x2="362.214" y2="37.8755" stroke="#57C78F" stroke-width="10"/>
+<line x1="402.214" y1="37.8755" x2="412.214" y2="37.8755" stroke="#57C78F" stroke-width="10"/>
+<line x1="425.214" y1="37.8755" x2="435.214" y2="37.8755" stroke="#57C78F" stroke-width="10"/>
+<line x1="448.214" y1="37.8755" x2="458.214" y2="37.8755" stroke="#57C78F" stroke-width="10"/>
+<line x1="188.818" y1="338.932" x2="323.61" y2="338.932" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<line x1="188.818" y1="306.024" x2="323.61" y2="306.024" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<line x1="188.818" y1="273.117" x2="323.61" y2="273.117" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<line x1="188.818" y1="240.21" x2="323.61" y2="240.21" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<line x1="188.818" y1="207.303" x2="323.61" y2="207.303" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<line x1="239.824" y1="174.396" x2="323.609" y2="174.395" stroke="#57C78F" stroke-width="10" stroke-linecap="round"/>
+<rect x="385.627" y="136.931" width="21" height="149.496" transform="rotate(20 385.627 136.931)" stroke="#57C78F" stroke-width="3"/>
+<line x1="381.593" y1="145.741" x2="402.652" y2="153.406" stroke="#57C78F" stroke-width="3"/>
+<path d="M334.08 278.233L335.63 305.237L354.023 285.491" stroke="#57C78F" stroke-width="3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M145.892 343.576V171.507L210.185 107.215H331.536C350.866 107.215 366.536 122.885 366.536 142.215V184.999L356.536 212.474V142.215C356.536 128.407 345.343 117.215 331.536 117.215H213.949V140.272C213.949 159.602 198.279 175.272 178.949 175.272H155.892V343.576C155.892 357.383 167.085 368.576 180.892 368.576H331.536C345.343 368.576 356.536 357.383 356.536 343.576V282.645L366.536 255.17V343.576C366.536 362.906 350.866 378.576 331.536 378.576H180.892C161.562 378.576 145.892 362.906 145.892 343.576Z" fill="#57C78F"/>
+</svg>

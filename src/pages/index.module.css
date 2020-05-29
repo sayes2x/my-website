@@ -1,0 +1,180 @@
+.main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 150px 150px 150px auto;
+  grid-template-areas:
+    "greeting greeting greeting"
+    "portfolio  resume resume"
+    "portfolio picture blog"
+    "technologies technologies blog"
+    "contact contact contact";
+  margin: 3.2rem 0;
+}
+
+.greeting {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  border-radius: 1em 1em 0 0;
+  grid-area: greeting;
+  text-align: center;
+}
+
+.portfolio {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: portfolio;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.portfolio:hover {
+  background-color: #0d0d0d;
+}
+
+.portfolio-image {
+  max-width: 8rem;
+  height: auto;
+  filter: opacity(50%);
+}
+
+.portfolio:hover .portfolio-image,
+.portfolio:hover .links {
+  filter: opacity(100%);
+}
+
+.resume {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: resume;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.resume:hover {
+  background-color: #0d0d0d;
+}
+
+.resume-image {
+  max-width: 8rem;
+  height: auto;
+  margin-left: 4rem;
+  filter: opacity(50%);
+}
+
+.resume:hover .resume-image,
+.resume:hover .links {
+  filter: opacity(100%);
+}
+
+.picture {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: picture;
+}
+
+.technologies {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: technologies;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.technologies:hover {
+  background-color: #0d0d0d;
+}
+
+.technologies-image {
+  max-width: 8rem;
+  height: auto;
+  margin-right: 4rem;
+  filter: opacity(50%);
+}
+
+.technologies:hover .technologies-image,
+.technologies:hover .links {
+  filter: opacity(100%);
+}
+
+.blog {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: blog;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.blog:hover {
+  background-color: #0d0d0d;
+}
+
+.blog-image {
+  max-width: 8rem;
+  height: auto;
+  filter: opacity(50%);
+}
+
+.blog:hover .blog-image,
+.blog:hover .links {
+  filter: opacity(100%);
+}
+
+.contact {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  border-radius: 0 0 1em 1em;
+  grid-area: contact;
+  color: #94B8DB;
+}
+
+.contact-spacing {
+  margin-bottom: 1rem;
+}
+
+.contact:hover {
+  background-color: #0d0d0d;
+}
+
+.freelance-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  margin: auto;
+  max-width: 8rem;
+  height: auto;
+  filter: opacity(50%);
+}
+
+.contact:hover .contact-image,
+.contact:hover .links {
+  filter: opacity(100%);
+}
+
+.list {
+  list-style: square;
+  margin: 0 0 0 1em;
+}
+
+.links {
+  color: #57C78F;
+  filter: opacity(50%);
+}

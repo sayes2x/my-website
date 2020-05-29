@@ -1,19 +1,23 @@
 ##New Colors
 
-Background
+###Background
 Dark Grey: #282828
-Main Font
+###Main Font
 Blue: #336699
 WCAG AAA Blue: #94B8DB
-Empahsis Font
+###Empahsis Font
 Green: #339966
 WCAG AAA Green: #57C78F
 darker: #39ac73
 darkest: #26734d
-Highlight Color
+###Highlight Color
 Red: #993333
 WCAG AAA Red: #E2A7A7
 Alt Red: #bf4040
+###Backgrounds
+Dark: #1a1a1a
+Darkest: #0d0d0d
+
 
 ##Old Colors
 

@@ -8,19 +8,22 @@
 }
 
 .nav-item {
-  color: #26734d;
+  color: #57C78F;
+  opacity: 50%;
   font-size: 1.6em;
   padding: .4rem 1.1rem;
   text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #39ac73;
+  color: #57C78F;
+  opacity: 75%;
   border-bottom: .4rem solid #993333;
 }
 
 .active-nav-item {
   color: #57C78F;
+  opacity: 100%;
   border-bottom: .4rem solid #bf4040;
 }
 

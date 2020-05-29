@@ -1,16 +1,58 @@
 import React from "react"
 import { Link } from 'gatsby'
 
+import portfolioSvg from '../img/my-portfolio.svg'
+import resume from '../img/resume.svg'
+import webTechnologies from '../img/web-technologies.svg'
+import blog from '../img/blog.svg'
+import hireMe from '../img/hire-me.svg'
+
 import Layout from '../components/layout'
 import Head from '../components/head'
+
+import style from './index.module.css'
 
 const Home = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <h1>Hello</h1>
-      <h2>I'm Scott, a front-end developer living in the greater Detroit area.</h2>
-      <p>Need a developer? <Link to="/contact">Contact me</Link>.</p>
+      <main className={style.main}>
+        <div className={style.greeting}>
+          <h3>I'm a front-end developer living in the greater Detroit area.</h3>
+        </div>
+        <Link to='/portfolio' className={style.portfolio}>
+          <img src={portfolioSvg} alt="my portfolio" className={style.portfolioImage} />
+          <p>To see examples of my work, please take a look at my <span className={style.links}>portfolio</span>.</p>
+        </Link>
+        <Link to='resume' className={style.resume}>
+          <p>For information about my eduction and experience, see my <span className={style.links}>resume</span>.</p>
+          <img src={resume} alt="my resume" className={style.resumeImage} />
+        </Link>
+        <div className={style.picture}></div>
+        <Link to='/about' className={style.technologies}>
+          <img src={webTechnologies} alt="web technologies" className={style.technologiesImage} />
+          <p>If you would like to see the web technologies I am using, go to my <span className={style.links}>about</span> page.</p>
+        </Link>
+        <Link to='/blog' className={style.blog}>
+          <p>I occasionally <span className={style.links}>blog</span> about what I am learning or other subjects of interest to me.</p>
+          <img src={blog} alt="my blog" className={style.blogImage} />
+        </Link>
+        <Link to="/contact" className={style.contact}>
+          <h3 className={style.contactSpacing}>Need a developer? <span className={style.links}>Contact</span> me.</h3>
+          <p className={style.contactSpacing}>I am interested in working for companies in the Greater Detroit area, or remotely for companies anywhere in the world.</p>
+          <div className={style.freelanceContainer}>
+            <img src={hireMe} alt="hire me" className={style.contactImage} />
+            <div>
+            <p className={style.contactSpacing}>I am also interested in freelance projects:</p>
+            <ul className={style.contactSpacing}>
+              <li className={style.list}>Does your business or organization need a website?</li>
+              <li className={style.list}>Do you need help building your personal presence on the web?</li>
+              <li className={style.list}>Can I do some consulting for your company or organization?</li>
+            </ul>
+            </div>
+          </div>
+        </Link>
+      </main>
     </Layout>
   )
 }
