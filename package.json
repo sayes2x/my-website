@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "my-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Website for Scott A. Price - Front-End Developer",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true env-cmd -f .env gatsby build --log-pages",
+    "build": "env-cmd -f .env gatsby build",
     "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
