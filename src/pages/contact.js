@@ -1,8 +1,16 @@
 import React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 
+import hireMe from '../img/hire-me.svg'
+import email from '../img/email.svg'
+import github from '../img/github.svg'
+import linkedIn from '../img/linked-in.svg'
+import twitter from '../img/twitter.svg'
+
 import Layout from '../components/layout'
 import Head from "../components/head"
+
+import style from './contact.module.css'
 
 const Contact = () => {
   const { site } = useStaticQuery(graphql`
@@ -18,37 +26,44 @@ const Contact = () => {
   return (
     <Layout>
       <Head title='Contact' />
-      <h1>Contact</h1>
-      <p>
-        Email:{" "}
-        <a
-          href={`mailto:${site.siteMetadata.email}`}
+      <main className={style.main}>
+        <a href={`mailto:${site.siteMetadata.email}`}
           target="_blank"
           rel="noopener noreferrer"
+          className={style.email}
         >
-          {site.siteMetadata.email}
+          <img src={email} alt="send me an email" className={style.emailImage} />
+          <p>email:<br></br> <span className={style.links}>{site.siteMetadata.email}</span></p>
         </a>
-      </p>
-      <p>
-        Twitter:{" "}
-        <a
-          href="https://www.twitter.com/sayes2x"
+        <a href="https://github.com/sayes2x"
           target="_blank"
           rel="noopener noreferrer"
+          className={style.github}
         >
-          @sayes2x
+          <p>github: <span className={style.links}>sayes2x</span></p>
+          <img src={github} alt="github" className={style.githubImage} />
         </a>
-      </p>
-      <p>
-        Linkedin:{" "}
-        <a
-          href="https://www.linkedin.com/in/scottalanprice"
+        <div className={style.workWithMe}>
+        <img src={hireMe} alt="work with me" className={style.workWithMeImage} />
+        <h3>Work with Me!</h3>
+        </div>
+        <a href="https://www.linkedin.com/in/scottalanprice"
           target="_blank"
           rel="noopener noreferrer"
+          className={style.linkedin}  
         >
-          linkedin.com/in/scottalanprice
+          <img src={linkedIn} alt="linkedin" className={style.linkedinImage}/>
+          <p>linkedIn: <span className={style.links}>linkedin.com/in/scottalanprice</span></p>
         </a>
-      </p>
+        <a href="https://www.twitter.com/sayes2x"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={style.twitter}  
+        >
+          <p>twitter: <span className={style.links}>@sayes2x</span></p>
+          <img src={twitter} alt="twitter" className={style.twitterImage}/>
+        </a>
+      </main>
     </Layout>
   )
 }

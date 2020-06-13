@@ -1,0 +1,203 @@
+.main {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "me"
+    "webTechnologies"
+    "usedProfessionally"
+    "usedProjects"
+    "studied";
+  margin: 3.2rem 1rem;
+  font-size: clamp(12px, 0.1em + 2.4vw, 16px);
+}
+
+.me {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: me;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+  border-radius: 1em 1em 0 0;
+}
+
+.web-technologies {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: webTechnologies;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.web-technologies-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.used-professionally {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: usedProfessionally;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.used-professionally-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.used-projects {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: usedProjects;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.used-projects-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.studied {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: studied;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+  border-radius: 0 0 1em 1em;
+}
+
+.studied-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.spacing {
+  margin-bottom: 1rem;
+}
+
+.italic {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.list {
+  list-style: square;
+  margin: 0 0 0 1rem;
+  filter: opacity(50%)
+}
+
+.list:hover {
+  filter: opacity(100%)
+}
+
+@media (min-width: 400px) {
+  .web-technologies-image {
+    max-width: 8rem;
+  }
+
+  .used-professionally {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image list";
+    justify-items: center;
+  }
+
+  .used-professionally-list {
+    grid-area: list;
+  }
+
+  .used-professionally-image {
+    grid-area: image;
+    max-width: 8rem;
+  }
+
+  .used-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "image less"
+    "more less";
+    justify-items: center;
+  }
+  .used-projects-image {
+    grid-area: image;
+    max-width: 8rem;
+  }
+
+  .used-projects-less {
+    grid-area: less;
+  }
+
+  .used-projects-more {
+    grid-area: more;
+  }
+
+  .studied {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image list";
+    justify-items: center;
+  }
+
+  .studied-image {
+    grid-area: image;
+    max-width: 8rem;
+  }
+
+  .studied-list {
+    grid-area: list;
+  }
+}
+
+@media (min-width: 650px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "me me"
+      "webTechnologies webTechnologies"
+      "usedProfessionally usedProjects"
+      "studied usedProjects";
+  }
+
+  .studied {
+    border-radius: 0 0 0 1em;
+  }
+
+  .used-projects {
+    padding: 1em;
+    border-radius: 0 0 1em 0;
+  }
+
+  .used-projects-more {
+    padding-right: 2rem;
+  }
+}

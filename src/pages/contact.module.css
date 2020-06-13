@@ -1,0 +1,202 @@
+.main {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 150px 150px 150px 150px;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "work-with-me"
+    "email"
+    "github"
+    "linkedin"
+    "twitter";
+  margin: 3.2rem 1rem;
+  font-size: clamp(12px, 0.1em + 2.4vw, 16px);
+}
+
+.email {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: email;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.email:hover {
+  background-color: #0d0d0d;
+}
+
+.email-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  filter: opacity(50%);
+  margin-right: 1rem;
+}
+
+.email:hover .email-image,
+.email:hover .links {
+  filter: opacity(100%);
+}
+
+.github {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: github;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.github:hover {
+  background-color: #0d0d0d;
+}
+
+.github-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);;
+  height: auto;
+  margin-left: 1rem;
+  filter: opacity(50%);
+}
+
+.github:hover .github-image,
+.github:hover .links {
+  filter: opacity(100%);
+}
+
+.work-with-me {
+  background-color: #1a1a1a;
+  border-top: .1em solid #282828;
+  padding: 1em 2em;
+  grid-area: work-with-me;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1em 1em 0 0;
+}
+
+.work-with-me-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);;
+  height: auto;
+}
+
+
+.linkedin {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: linkedin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.linkedin:hover {
+  background-color: #0d0d0d;
+}
+
+.linkedin-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);;
+  height: auto;
+  filter: opacity(50%);
+  margin-right: 1rem;
+}
+
+.linkedin:hover .linkedin-image,
+.linkedin:hover .links {
+  filter: opacity(100%);
+}
+
+.twitter {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: twitter;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+  border-radius: 0 0 1em 1em;
+}
+
+.twitter:hover {
+  background-color: #0d0d0d;
+}
+
+.twitter-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);;
+  height: auto;
+  filter: opacity(50%);
+  margin-left: 1rem;
+}
+
+.twitter:hover .twitter-image,
+.twitter:hover .links {
+  filter: opacity(100%);
+}
+
+.links {
+  color: #57C78F;
+  filter: opacity(50%);
+}
+
+@media (min-width: 650px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 150px 150px 150px auto;
+    grid-template-areas:
+    "email  github github"
+    "email work-with-me twitter"
+    "linkedin linkedin twitter";
+    margin: 3.2rem 0;
+    font-size: 1.6rem;
+  }
+
+  .work-with-me {
+    border-radius: 0;
+  }
+
+  .work-with-me-image {
+    max-width: 8rem;
+  }
+
+  .email {
+    flex-direction: column;
+    border-radius: 1em 0 0 0; 
+  }
+  
+  .email-image {
+    margin-right: 0;
+    max-width: 8rem;
+  }
+  
+  .github {
+    border-radius: 0 1em 0 0;
+  }
+
+.github-image {
+  max-width: 8rem;
+}
+
+  .linkedin {
+    border-radius: 0 0 0 1em;
+  }
+
+  .linkedin-image {
+    max-width: 8rem;
+  }
+
+  .twitter {
+    flex-direction: column;
+    border-radius: 0 0 1em 0;
+  }
+
+  .twitter-image {
+    margin-right: 0;
+    max-width: 8rem;
+  }
+}

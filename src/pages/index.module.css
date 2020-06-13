@@ -1,15 +1,18 @@
 .main {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 150px 150px 150px auto;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 150px 150px 150px 150px 150px auto;
   grid-template-areas:
-    "greeting greeting greeting"
-    "portfolio  resume resume"
-    "portfolio picture blog"
-    "technologies technologies blog"
-    "contact contact contact";
-  margin: 3.2rem 0;
+    "greeting"
+    "portfolio"
+    "resume"
+    "picture"
+    "blog"
+    "technologies"
+    "contact";
+  margin: 3.2rem 1rem;
+  font-size: clamp(12px, 0.1em + 2.4vw, 16px);
 }
 
 .greeting {
@@ -22,11 +25,10 @@
 
 .portfolio {
   background-color: #1a1a1a;
-  border-top: .1em solid #282828;
   padding: 1em 2em;
   grid-area: portfolio;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   color: #94B8DB;
@@ -37,9 +39,10 @@
 }
 
 .portfolio-image {
-  max-width: 8rem;
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
   height: auto;
   filter: opacity(50%);
+  margin-right: 4rem;
 }
 
 .portfolio:hover .portfolio-image,
@@ -49,7 +52,6 @@
 
 .resume {
   background-color: #1a1a1a;
-  border-top: .1em solid #282828;
   padding: 1em 2em;
   grid-area: resume;
   display: flex;
@@ -63,7 +65,7 @@
 }
 
 .resume-image {
-  max-width: 8rem;
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
   height: auto;
   margin-left: 4rem;
   filter: opacity(50%);
@@ -83,7 +85,6 @@
 
 .technologies {
   background-color: #1a1a1a;
-  border-top: .1em solid #282828;
   padding: 1em 2em;
   grid-area: technologies;
   display: flex;
@@ -97,7 +98,7 @@
 }
 
 .technologies-image {
-  max-width: 8rem;
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
   height: auto;
   margin-right: 4rem;
   filter: opacity(50%);
@@ -110,11 +111,10 @@
 
 .blog {
   background-color: #1a1a1a;
-  border-top: .1em solid #282828;
   padding: 1em 2em;
   grid-area: blog;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   color: #94B8DB;
@@ -125,9 +125,10 @@
 }
 
 .blog-image {
-  max-width: 8rem;
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
   height: auto;
   filter: opacity(50%);
+  margin-left: 4rem;
 }
 
 .blog:hover .blog-image,
@@ -137,7 +138,6 @@
 
 .contact {
   background-color: #1a1a1a;
-  border-top: .1em solid #282828;
   padding: 1em 2em;
   border-radius: 0 0 1em 1em;
   grid-area: contact;
@@ -159,9 +159,10 @@
 
 .contact-image {
   margin: auto;
-  max-width: 8rem;
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
   height: auto;
   filter: opacity(50%);
+  margin-right: 4rem;
 }
 
 .contact:hover .contact-image,
@@ -177,4 +178,35 @@
 .links {
   color: #57C78F;
   filter: opacity(50%);
+}
+
+@media (min-width: 650px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 150px 150px 150px auto;
+    grid-template-areas:
+    "greeting greeting greeting"
+    "portfolio  resume resume"
+    "portfolio picture blog"
+    "technologies technologies blog"
+    "contact contact contact";
+    margin: 3.2rem 0;
+    font-size: 1.6rem;
+  }
+
+  .portfolio {
+    flex-direction: column; 
+  }
+
+  .portfolio-image {
+    margin-right: 0;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog-image {
+    margin-right: 0;
+  }
 }

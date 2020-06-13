@@ -41,7 +41,7 @@ const Home = () => {
           <h3 className={style.contactSpacing}>Need a developer? <span className={style.links}>Contact</span> me.</h3>
           <p className={style.contactSpacing}>I am interested in working for companies in the Greater Detroit area, or remotely for companies anywhere in the world.</p>
           <div className={style.freelanceContainer}>
-            <img src={hireMe} alt="hire me" className={style.contactImage} />
+            <img src={hireMe} alt="work with me" className={style.contactImage} />
             <div>
             <p className={style.contactSpacing}>I am also interested in freelance projects:</p>
             <ul className={style.contactSpacing}>
