@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem 1rem;
+  font-size: clamp(1.2rem, 0.1em + 2.4vw, 1.6rem);
+}
+
+.portfolio {
+  background-color: #1a1a1a;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 1rem;
+}
+.portfolio-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.post {
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.post:hover {
+  background-color: #0d0d0d;
+}
+
+.post:last-child {
+  border-radius: 0 0 1em 1em;
+}

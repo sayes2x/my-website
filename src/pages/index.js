@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 
-import portfolioSvg from '../img/my-portfolio.svg'
+import portfolio from '../img/my-portfolio.svg'
 import resume from '../img/resume.svg'
 import webTechnologies from '../img/web-technologies.svg'
 import blog from '../img/blog.svg'
@@ -21,7 +21,7 @@ const Home = () => {
           <h3>I'm a front-end developer living in the greater Detroit area.</h3>
         </div>
         <Link to='/portfolio' className={style.portfolio}>
-          <img src={portfolioSvg} alt="my portfolio" className={style.portfolioImage} />
+          <img src={portfolio} alt="my portfolio" className={style.portfolioImage} />
           <p>To see examples of my work, please take a look at my <span className={style.links}>portfolio</span>.</p>
         </Link>
         <Link to='resume' className={style.resume}>
