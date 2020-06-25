@@ -24,7 +24,7 @@ const Home = () => {
           <img src={portfolio} alt="my portfolio" className={style.portfolioImage} />
           <p>To see examples of my work, please take a look at my <span className={style.links}>portfolio</span>.</p>
         </Link>
-        <Link to='resume' className={style.resume}>
+        <Link to='/resume' className={style.resume}>
           <p>For information about my eduction and experience, see my <span className={style.links}>resume</span>.</p>
           <img src={resume} alt="my resume" className={style.resumeImage} />
         </Link>

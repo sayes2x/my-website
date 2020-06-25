@@ -1,7 +1,7 @@
 html {
   font-family: "Krub", sans-serif;
   font-weight: 500;
-  color: #94B8DB
+  color: #94B8DB;
 }
 
 body {
@@ -12,4 +12,12 @@ body {
 a {
   text-decoration: none;
   color: #57C78F;
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    /* Prevent page shift when scrollbar appears */
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+  }
 }

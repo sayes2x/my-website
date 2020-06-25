@@ -57,7 +57,7 @@ const Experience = ({ data: { companies } }) => {
                       logoTitle={company.logo.title}
                       company={company.company}
                       location={company.location}
-                      title={company.jopTitle}
+                      title={company.jobTitle}
                       dates={company.date}
                       summary={company.summary.json}
                       detail={company.detail.json} />

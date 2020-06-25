@@ -2,7 +2,7 @@
   "name": "my-website",
   "private": true,
   "description": "Website for Scott A. Price - Front-End Developer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "env-cmd -f .env gatsby build",
