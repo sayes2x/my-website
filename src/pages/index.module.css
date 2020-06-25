@@ -2,7 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(5, 1.5rem) auto;
+  grid-template-rows: repeat(7, auto);
   grid-template-areas:
     "greeting"
     "portfolio"
