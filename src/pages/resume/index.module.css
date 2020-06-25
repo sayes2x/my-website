@@ -1,0 +1,124 @@
+.main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "resume resume"
+    "experience education"
+    "purpose purpose";
+  margin: 3.2rem 1rem;
+  font-size: clamp(1.2rem, 0.1em + 2.4vw, 1.6rem);
+}
+
+.resume {
+  background-color: #1a1a1a;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 1rem;
+  grid-area: resume;
+}
+.resume-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.experience {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: experience;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.experience:hover {
+  background-color: #0d0d0d;
+}
+
+.experience-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  margin-bottom: 1rem;
+  filter: opacity(50%);
+}
+
+.experience-label {
+  color: #57C78F;
+  filter: opacity(50%);
+}
+
+.experience:hover .experience-image,
+.experience:hover .experience-label {
+  filter: opacity(100%);
+}
+
+.education {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: education;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #94B8DB;
+}
+
+.education:hover {
+  background-color: #0d0d0d;
+}
+
+.education-image {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  min-height: clamp(3rem, 0.1em + 12vw ,6rem);
+  margin-bottom: 1rem;
+  filter: opacity(50%);
+}
+
+.education-label {
+  color: #57C78F;
+  filter: opacity(50%);
+}
+
+.education:hover .education-image,
+.education:hover .education-label {
+  filter: opacity(100%);
+}
+
+.purpose {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  grid-area: purpose;
+  color: #94B8DB;
+  border-radius: 0 0 1em 1em;
+}
+
+.contact {
+  color: #57C78F;
+  filter: opacity(50%);
+}
+
+.contact:hover {
+  filter: opacity(100%);
+}
+
+@media (min-width: 650px) {
+  .experience {
+    flex-direction: row;
+  }
+
+  .experience-image {
+    margin-bottom: 0;
+  }
+
+  .education {
+    flex-direction: row-reverse;
+  }
+
+  .education-image {
+    margin-bottom: 0;
+  }
+}

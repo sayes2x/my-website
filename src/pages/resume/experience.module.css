@@ -1,0 +1,40 @@
+.main {
+  display: grid;
+
+  margin: 3.2rem 1rem;
+  font-size: clamp(1.2rem, 0.1em + 2.4vw, 1.6rem);
+}
+
+.experience {
+  background-color: #1a1a1a;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 1rem;
+}
+
+.experienceImage {
+  max-width: clamp(4rem, 0.1em + 12vw, 8rem);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.education {
+  background-color: #1a1a1a;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.education p {
+  filter: opacity(50%);
+}
+
+.education:hover {
+  background-color: #0d0d0d;
+}
+
+.education:hover p {
+  filter: opacity(100%);
+}

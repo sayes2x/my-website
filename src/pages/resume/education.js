@@ -1,12 +1,13 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+
+import education from '../../img/education.svg'
 
 import Layout from '../../components/layout'
 import Head from '../../components/head'
-import ResumeHeader from '../../components/resumeHeader'
 import EducationSummaryDetail from '../../components/educationSummaryDetail'
 
-import style from '../blog.module.css'
+import style from './education.module.css'
 
 export const query = graphql`
   {
@@ -41,8 +42,11 @@ export const query = graphql`
   return (
     <Layout>
       <Head title="Resume - Education" />
-      <ResumeHeader />
-      <h1>Education</h1>
+      <main className={style.main}>
+      <div className={style.education}>
+            <img src={education} alt="my portfolio" className={style.educationImage}/>
+          </div>
+          <Link to='/resume/experience' className={style.experience}><p>Go to Experience</p></Link>
       <ol className={style.posts}>
         {colleges.nodes.map(college => {
           return (
@@ -59,6 +63,7 @@ export const query = graphql`
           )
         })}
       </ol>
+      </main>
     </Layout>
   )
 }
