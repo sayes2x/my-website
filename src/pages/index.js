@@ -38,7 +38,7 @@ const Home = () => {
           <img src={blog} alt="my blog" className={style.blogImage} />
         </Link>
         <Link to="/contact" className={style.contact}>
-          <h3 className={style.contactSpacing}>Need a developer? <span className={style.links}>Contact</span> me.</h3>
+          <h3 className={style.contactSpacing}>Need a developer? <span className={style.links}>Contact me</span>.</h3>
           <p className={style.contactSpacing}>I am interested in working for companies in the Greater Detroit area, or remotely for companies anywhere in the world.</p>
           <div className={style.freelanceContainer}>
             <img src={hireMe} alt="work with me" className={style.contactImage} />
