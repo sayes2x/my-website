@@ -17,8 +17,8 @@ const PortfolioSummaryDetail = ({ screenShotUrl, screenShotTitle, projectName, l
         <div>
           {documentToReactComponents(detail)}
           <div className={style.links}>
-            <p className={style.link}><a href={link} target="_blank" rel="noopener noreferrer">Go to {projectName}</a></p>
-            <p className={style.link}><a href={repository} target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+            <p><a href={link} target="_blank" rel="noopener noreferrer">Go to {projectName}</a></p>
+            <p><a href={repository} target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
           </div>
         </div>
       }

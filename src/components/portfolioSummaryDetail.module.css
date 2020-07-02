@@ -48,14 +48,6 @@
   padding: 2rem 0;
 }
 
-.link {
-  filter: opacity(50%);
-}
-
-.link:hover {
-  filter: opacity(100%);
-}
-
 .click {
   padding: 1rem 2rem;
   text-align: center;
