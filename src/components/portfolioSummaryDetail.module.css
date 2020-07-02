@@ -5,13 +5,28 @@
 .section p {
   padding: 1rem 2rem;
 }
+
+.section a {
+  filter: opacity(50%)
+}
+
+.section a:hover {
+  filter: opacity(100%)
+}
+
 .section ul p {
   padding: 0 2rem 0 0;
+  color: #94B8DB;
 }
 
 .section ul {
   list-style-type: square;
   padding-left: 4rem;
+}
+
+.section li {
+  margin-left: 2rem;
+  color: #bf4040;
 }
 
 .project-name {

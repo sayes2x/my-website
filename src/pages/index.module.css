@@ -171,8 +171,18 @@
 }
 
 .list {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.list-item {
   list-style: square;
   margin: 0 0 0 1em;
+  color: #bf4040;
+}
+
+.list-text {
+  color: #94B8DB;
 }
 
 .links {

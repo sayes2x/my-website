@@ -104,12 +104,20 @@
 }
 
 .list {
+  margin-left: 2rem;
+}
+
+.list-item {
   list-style: square;
   margin: 0 0 0 1rem;
+  color: #bf4040;
+}
+
+.list-item a {
   filter: opacity(50%)
 }
 
-.list:hover {
+.list-item a:hover {
   filter: opacity(100%)
 }
 

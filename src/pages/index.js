@@ -44,10 +44,10 @@ const Home = () => {
             <img src={hireMe} alt="work with me" className={style.contactImage} />
             <div>
             <p className={style.contactSpacing}>I am also interested in freelance projects:</p>
-            <ul className={style.contactSpacing}>
-              <li className={style.list}>Does your business or organization need a website?</li>
-              <li className={style.list}>Do you need help building your personal presence on the web?</li>
-              <li className={style.list}>Can I do some consulting for your company or organization?</li>
+            <ul className={style.list}>
+              <li className={style.listItem}><span className={style.listText}>Does your business or organization need a website?</span></li>
+              <li className={style.listItem}><span className={style.listText}>Do you need help building your personal presence on the web?</span></li>
+              <li className={style.listItem}><span className={style.listText}>Can I do some consulting for your company or organization?</span></li>
             </ul>
             </div>
           </div>

@@ -21,13 +21,19 @@ h2, h3 {
   color: #57C78F;
 }
 
-.section ul p {
-  padding: 0 2rem 0 0;
+.section ul {
+  margin-left: 4rem;
 }
 
-.section ul {
+.section ul li {
   list-style-type: square;
-  padding-left: 4rem;
+  margin: 0 0 0 1rem;
+  color: #bf4040;
+}
+
+.section ul p {
+  color: #94B8DB;
+  padding-left: 0;
 }
 
 .experience-image {
