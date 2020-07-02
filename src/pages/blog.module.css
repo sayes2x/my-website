@@ -15,6 +15,14 @@
   text-decoration: none;
 }
 
+.post a:first-of-type {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.post a:last-of-type {
+  border-radius: 1rem 1rem 0 0;
+}
+
 .post a:hover {
   background: #0d0d0d;
 }
@@ -25,6 +33,6 @@
 
 .post p {
   color: #72abbf;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
