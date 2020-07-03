@@ -200,3 +200,13 @@
     max-width: 8rem;
   }
 }
+
+@media (any-hover: none) {
+  .email-image,
+  .github-image,
+  .linkedin-image,
+  .twitter-image,
+  .links {
+    filter: opacity(100%);
+  }
+}

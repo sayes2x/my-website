@@ -209,3 +209,9 @@
     padding-right: 2rem;
   }
 }
+
+@media (any-hover: none) {
+  .list-item a {
+    filter: opacity(100%);
+  }
+}

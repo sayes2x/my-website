@@ -51,3 +51,9 @@
 .post:last-child {
   border-radius: 0 0 1em 1em;
 }
+
+@media (any-hover: none) {
+  .experience p {
+    filter: opacity(100%);
+  }
+}

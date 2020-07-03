@@ -122,3 +122,13 @@
     margin-bottom: 0;
   }
 }
+
+@media (any-hover: none) {
+  .experience-image,
+  .experience-label,
+  .education-image,
+  .education-label,
+  .contact {
+    filter: opacity(100%);
+  }
+}

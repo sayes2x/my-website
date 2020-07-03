@@ -220,3 +220,15 @@
     margin-right: 0;
   }
 }
+
+
+@media (any-hover: none) {
+  .links, 
+  .portfolio-image, 
+  .resume-image, 
+  .technologies-image, 
+  .blog-image, 
+  .contact-image {
+    filter: opacity(100%);
+  }
+}

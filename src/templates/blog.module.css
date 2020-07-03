@@ -130,3 +130,9 @@ article ol {
   padding: 2rem;
   border-left: .4rem solid #bf4040;
 }
+
+@media (any-hover: none) {
+  .article a {
+    filter: opacity(100%);
+  }
+}
