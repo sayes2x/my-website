@@ -15,14 +15,12 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Krub`,
-            variants: [`500`, `700`],
-          },
+          `Krub\:500,700`
         ],
+        display: 'swap'
       },
     },
   ],

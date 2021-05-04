@@ -17,7 +17,7 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^14.1.1",
     "gatsby": "^2.23.14",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.3.8",
     "gatsby-source-contentful": "^2.3.20",
     "react": "^16.12.0",
